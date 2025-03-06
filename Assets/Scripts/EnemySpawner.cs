@@ -14,14 +14,14 @@ public class EnemySpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameStart = GameObject.FindGameObjectWithTag("Start");
+        startScript = gameStart.GetComponent<GameStart>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        gameStart = GameObject.FindGameObjectWithTag("Start");
-        startScript = gameStart.GetComponent<GameStart>();
+        
         if (startScript.gameStarted == true) 
         {
             timePassed = timePassed + Time.deltaTime;
@@ -32,7 +32,6 @@ public class EnemySpawner : MonoBehaviour
             }
         }
         
-        //print(timePassed);
     }
     void SpawnEnemy()
     {    

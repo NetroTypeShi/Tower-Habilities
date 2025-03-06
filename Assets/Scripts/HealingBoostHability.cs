@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hability5 : ParentClass
+public class HealingBoostHability : HabilitiesParent
 {
     float cooldownTime = 0f;
     [SerializeField] ParticleSystem healingUpgradeParticles;

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Hability3 : ParentClass
+public class ForceFieldHability : HabilitiesParent
 {
     float cooldownTime = 0f;
     GameObject gameStart;

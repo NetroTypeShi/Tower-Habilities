@@ -31,12 +31,13 @@ public class EventBehavior : MonoBehaviour
     
     void Update()
     {
-        scoreCounter.text = "Score: " + score;
+       
     }
    
     void EnemyDying()
     {
-        score = score + 1;       
+        score = score + 1;
+        scoreCounter.text = "Score: " + score;
     }
 
     void PlayerDeath()
@@ -52,6 +53,8 @@ public class EventBehavior : MonoBehaviour
         player.transform.position = new Vector2(0, 0);
         startScript.gameStartAndOverText.text = ("");
         score = 0;
+        scoreCounter.text = "Score: " + score;
+        triangleScript.rend.color = triangleScript.healthColor.Evaluate(1f * playerAttributesScript.health / playerAttributesScript.maxHealth);
     }
 
 }

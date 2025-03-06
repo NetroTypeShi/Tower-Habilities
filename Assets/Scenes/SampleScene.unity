@@ -10664,13 +10664,13 @@ GameObject:
   - component: {fileID: 900238961}
   - component: {fileID: 900238969}
   - component: {fileID: 900238960}
-  - component: {fileID: 900238964}
-  - component: {fileID: 900238958}
-  - component: {fileID: 900238966}
-  - component: {fileID: 900238967}
-  - component: {fileID: 900238968}
+  - component: {fileID: 900238972}
   - component: {fileID: 900238971}
   - component: {fileID: 900238970}
+  - component: {fileID: 900238976}
+  - component: {fileID: 900238975}
+  - component: {fileID: 900238974}
+  - component: {fileID: 900238973}
   - component: {fileID: 900238963}
   - component: {fileID: 900238965}
   m_Layer: 0
@@ -10680,24 +10680,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &900238958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 900238957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c7b49985207ca741be4a17dc1df2ad4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abilityName: 
-  icon: {fileID: 634042819}
-  cooldown: 1
-  originalScale: 0.4
-  puntita: {fileID: 915618395}
-  bulletPrefab: {fileID: 3149792956999495775, guid: 78ded392c7943854fbf172560eb521d9, type: 3}
 --- !u!114 &900238960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10712,13 +10694,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   habilitiesOn: 0
   abilities:
-  - {fileID: 900238964}
-  - {fileID: 900238958}
-  - {fileID: 900238966}
-  - {fileID: 900238967}
-  - {fileID: 900238968}
+  - {fileID: 900238972}
   - {fileID: 900238971}
   - {fileID: 900238970}
+  - {fileID: 900238976}
+  - {fileID: 900238975}
+  - {fileID: 900238974}
+  - {fileID: 900238973}
   abilityNumber: 0
 --- !u!212 &900238961
 SpriteRenderer:
@@ -10842,24 +10824,6 @@ MonoBehaviour:
   mouse: {x: 0, y: 0}
   angle: 0
   direction: {x: 0, y: 0}
---- !u!114 &900238964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 900238957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c7b49985207ca741be4a17dc1df2ad4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abilityName: 
-  icon: {fileID: 34267290}
-  cooldown: 0.15
-  originalScale: 0.3
-  puntita: {fileID: 915618395}
-  bulletPrefab: {fileID: 3149792956999495775, guid: 84f67b9a07edbed4d9be304ebd6c1ed9, type: 3}
 --- !u!60 &900238965
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -10908,52 +10872,6 @@ PolygonCollider2D:
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 0
---- !u!114 &900238966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 900238957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7b486a9b840b424cbde50ed53ab8cbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abilityName: 
-  icon: {fileID: 981519972}
-  cooldown: 4
-  healthParticles: {fileID: 1914463266}
---- !u!114 &900238967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 900238957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 037503d429fd8c74a952e00402219e4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abilityName: 
-  icon: {fileID: 1480013096}
-  cooldown: 9
---- !u!114 &900238968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 900238957}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3837c0a1a7c130143ae9facd4f5b494f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abilityName: 
-  icon: {fileID: 530152997}
-  cooldown: 5
 --- !u!114 &900238969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10982,14 +10900,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 900238957}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13975b503784ec540bdbcd47d3681d28, type: 3}
+  m_Script: {fileID: 11500000, guid: 0370d0dc541901c4e93f8f4856541f83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   abilityName: 
-  icon: {fileID: 164374226}
-  cooldown: 15
-  strengthBoostParticles: {fileID: 1897718149}
-  strengthIncrement: 2
+  icon: {fileID: 981519972}
+  cooldown: 7
+  healthParticles: {fileID: 1914463266}
 --- !u!114 &900238971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10999,14 +10916,97 @@ MonoBehaviour:
   m_GameObject: {fileID: 900238957}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fccb0cb8b0d2e1a4082c993ca4f94abf, type: 3}
+  m_Script: {fileID: 11500000, guid: 0f275509a96b86b4cbd0e4a33fee86f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityName: Canon
+  icon: {fileID: 634042819}
+  cooldown: 1
+  originalScale: 0.4
+  puntita: {fileID: 915618395}
+  bulletPrefab: {fileID: 3149792956999495775, guid: 78ded392c7943854fbf172560eb521d9, type: 3}
+--- !u!114 &900238972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900238957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f275509a96b86b4cbd0e4a33fee86f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityName: Pistol
+  icon: {fileID: 34267290}
+  cooldown: 0.2
+  originalScale: 0.3
+  puntita: {fileID: 915618395}
+  bulletPrefab: {fileID: 3149792956999495775, guid: 84f67b9a07edbed4d9be304ebd6c1ed9, type: 3}
+--- !u!114 &900238973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900238957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787458a48748772439c28eaf53ca58a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityName: 
+  icon: {fileID: 164374226}
+  cooldown: 14
+  strengthBoostParticles: {fileID: 1897718149}
+  strengthIncrement: 2
+--- !u!114 &900238974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900238957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d1bd8bdf0e9f944a85dd873507549e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   abilityName: 
   icon: {fileID: 798131684}
   cooldown: 10
   healingUpgradeParticles: {fileID: 816064154}
-  healingBoost: 15
+  healingBoost: 10
+--- !u!114 &900238975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900238957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff0433d211b79b54a921734b216eb312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityName: 
+  icon: {fileID: 530152997}
+  cooldown: 5
+--- !u!114 &900238976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900238957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1843437d7c8e3604ca0ed7cbee05ce61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityName: 
+  icon: {fileID: 1480013096}
+  cooldown: 8
 --- !u!1 &915618394
 GameObject:
   m_ObjectHideFlags: 0

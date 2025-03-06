@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hability4 : ParentClass
+public class TeleportHability : HabilitiesParent
 {
     float cooldownTime = 0f;
     GameObject gameStart;

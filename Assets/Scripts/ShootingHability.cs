@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Hability1 : ParentClass
+public class ShootingHability : HabilitiesParent
 {
     [SerializeField] float originalScale;    
     [SerializeField] Transform puntita;

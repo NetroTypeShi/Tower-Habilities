@@ -19,19 +19,18 @@ public class EnemyBehavior : MonoBehaviour
     void Start()
     {        
         health = maxHealth;
-        
+        player = GameObject.FindGameObjectWithTag("Player");
+        triangleScript = player.GetComponent<PlayerBehavior>();
+        playerAttributesScript = player.GetComponent<PlayerAttributes>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        
         rend.color = healthColor.Evaluate(1f * health / maxHealth);        
         playerPosition = player.transform;
         direction = (playerPosition.position - transform.position).normalized;
-        triangleScript = player.GetComponent<PlayerBehavior>();
-        playerAttributesScript = player.GetComponent<PlayerAttributes>();
-        //print(triangleScript);
         if (playerAttributesScript.health > 0) { gameObject.transform.position += direction * speed * Time.deltaTime; }
         if (playerAttributesScript.health <= 0) { gameObject.transform.position -= direction * speed * Time.deltaTime;}
         if (health <= 0) { Destroy(gameObject); EnemyDeath(); }
@@ -39,7 +38,7 @@ public class EnemyBehavior : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        player = GameObject.FindGameObjectWithTag("Player");        
+        if (collision.gameObject.CompareTag("Bullet")) { rend.color = healthColor.Evaluate(1f * health / maxHealth); }
         if (collision.gameObject.CompareTag("Area")) { Destroy(gameObject); EnemyDeath(); }
         if (collision.gameObject.CompareTag("Player")) { Destroy(gameObject); }
     }

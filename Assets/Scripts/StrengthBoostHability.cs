@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hablity6 : ParentClass
+public class StrengthBoostHability : HabilitiesParent
 {
     float cooldownTime = 0f;
     GameStart gameStart;

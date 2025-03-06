@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hability2 : ParentClass
+public class CureHability : HabilitiesParent
 {
     float cooldownTime = 0f;
     [SerializeField] ParticleSystem healthParticles;
@@ -32,8 +32,8 @@ public class Hability2 : ParentClass
                 triangleScript = player.GetComponent<PlayerBehavior>();
                 playerAttributesScript = player.GetComponent<PlayerAttributes>();
                 playerAttributesScript.health = playerAttributesScript.health + playerAttributesScript.maxHealth / 2;
+                triangleScript.rend.color = triangleScript.healthColor.Evaluate(1f * playerAttributesScript.health / playerAttributesScript.maxHealth);
                 Invoke("StopParticles", 1f);
-
                 cooldownTime = cooldown;
                 icon.fillAmount = 0;
             }

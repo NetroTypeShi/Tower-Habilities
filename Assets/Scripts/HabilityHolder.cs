@@ -5,7 +5,7 @@ using UnityEngine;
 public class HabilityHolder : MonoBehaviour
 {
     public bool habilitiesOn = true;
-    [SerializeField]ParentClass[] abilities;
+    [SerializeField] HabilitiesParent[] abilities;
     public int abilityNumber;
     // Start is called before the first frame update
     void Start()

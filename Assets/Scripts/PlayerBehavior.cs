@@ -10,8 +10,8 @@ public class PlayerBehavior : MonoBehaviour
     [SerializeField] ParticleSystem damageParticles;
     float timePassed = 0;
     [SerializeField] float maxTime = 0.2f;
-    [SerializeField] SpriteRenderer rend;
-    [SerializeField] Gradient healthColor;
+    [SerializeField] public SpriteRenderer rend;
+    [SerializeField] public Gradient healthColor;
     [SerializeField] public ParticleSystem healthParticles;
     float healthPercent;
     GameObject gameStart;
@@ -47,7 +47,7 @@ public class PlayerBehavior : MonoBehaviour
             {
                 if (playerAttributesScript.health > playerAttributesScript.maxHealth) { playerAttributesScript.health = playerAttributesScript.maxHealth; }
 
-                rend.color = healthColor.Evaluate(1f * playerAttributesScript.health / playerAttributesScript.maxHealth);
+                
 
                 point = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z - cam.transform.position.z));
                 //(posición del raton x e y, vector unitario entre el eje z del point y el del cam) 
@@ -81,6 +81,7 @@ public class PlayerBehavior : MonoBehaviour
             enemyMovement = collision.gameObject.GetComponent<EnemyBehavior>();
             playerAttributesScript.health = playerAttributesScript.health - enemyMovement.damage;
             damageParticles.Play();
+            rend.color = healthColor.Evaluate(1f * playerAttributesScript.health / playerAttributesScript.maxHealth);
             Invoke("StopParticles", 1f);
 
         }
